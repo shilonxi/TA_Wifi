@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wifi_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wifi.Wifi_Activity">
+    <!--线性垂直布局-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#34f4a7"
+        android:text="连接信息："
+        android:textColor="#0b975f"
+        android:textSize="22sp" />
+    <!--提示信息-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/wifi_show_conn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </ScrollView>
+    <!--显示连接信息-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#34f4a7"
+        android:text="wifi列表："
+        android:textColor="#0b975f"
+        android:textSize="22sp" />
+    <!--提示信息-->
+
+    <ListView
+        android:id="@+id/wifi_conn_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp">
+    </ListView>
+    <!--显示可连wifi-->
+
+    <LinearLayout
+        android:id="@+id/ll_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--线性水平布局-->
+
+        <Button
+            android:id="@+id/wifi_conn_scan_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="wifi-sacn"
+            android:textColor="#0b975f"
+            android:textSize="18sp"
+            android:background="#34f4a7" />
+        <!--扫描-->
+
+        <Button
+            android:id="@+id/wifi_conn_switch_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="wifi-on/off"
+            android:textColor="#0b975f"
+            android:textSize="18sp"
+            android:background="#34f4a7" />
+        <!--开关-->
+
+        <Button
+            android:id="@+id/wifi_conn_cancle_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="cancle"
+            android:textColor="#0b975f"
+            android:textSize="18sp"
+            android:background="#34f4a7" />
+        <!--退出-->
+
+    </LinearLayout>
+
+</LinearLayout>

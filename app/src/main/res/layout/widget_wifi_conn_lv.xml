@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="horizontal">
+    <!--基准线对齐，水平布局-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="3dp">
+        <!--线性垂直布局-->
+
+        <TextView
+            android:id="@+id/wifi_conn_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="11111" />
+        <!--显示名称-->
+
+        <TextView
+            android:id="@+id/wifi_conn_wpe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="11111" />
+        <!--显示加密类型-->
+
+    </LinearLayout>
+    <!--文字区-->
+
+    <ImageView
+        android:id="@+id/wifi_conn_level"
+        android:layout_width="50dp"
+        android:layout_height="match_parent" />
+    <!--用图片显示信号强度-->
+
+    <!--显示wifi列表元素-->
+
+</LinearLayout>
